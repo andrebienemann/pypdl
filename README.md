@@ -1,2 +1,1 @@
-# pypdl
-pypdl
+# Python Probability Distributions Library
