@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pypdl",
-    version="0.2.1",
+    version="0.3.0",
     author="André Bienemann",
     author_email="andre.bienemann@gmail.com",
     description="Python Probability Distributions Library",
