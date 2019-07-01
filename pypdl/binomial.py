@@ -10,9 +10,9 @@ class Binomial:
     def __init__(self, n, p):
         """
         This is the discrete probability distribution of the number of successes
-        in a sequence of n independent experiments with probability of success p \n
-        :param n: Number of
-        :param p:
+        in a sequence of size n independent experiments with probability of success p \n
+        :param n: Size of sequence
+        :param p: Probability of success
         """
         self.n = n
         self.p = p

@@ -6,7 +6,7 @@ class Poisson:
     def __init__(self, λ):
         """
         This is a discrete probability distribution that expresses the probability
-        of a given number of events occurring in a fixed interval of time or space
+        of a given number of events occurring in a fixed interval of time or space \n
         :param λ: Average number of events
         """
         self.λ = λ
