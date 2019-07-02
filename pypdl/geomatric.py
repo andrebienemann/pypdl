@@ -3,7 +3,7 @@ class Geometric:
     def __init__(self, p):
         """
         This is the discrete probability distributions of the random number X
-        of Bernoulli trials needed to get a single success
+        of Bernoulli trials needed to get a single success \n
         :param p: Probability of the positive outcome of the experiment
         """
         self.p = p
