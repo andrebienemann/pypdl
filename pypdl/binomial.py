@@ -25,8 +25,7 @@ class Binomial:
         :param x: Value of the random variable X
         :return: Probability that X will take a value exactly equal to x
         """
-        bc = _binomial(self.n, x)
-        return bc * self.p ** x * (1 - self.p) ** (self.n - x)
+        return _binomial(self.n, x) * self.p ** x * (1 - self.p) ** (self.n - x)
 
     def cdf(self, x):
         """
