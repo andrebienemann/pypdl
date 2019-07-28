@@ -6,9 +6,9 @@ class Normal:
     def __init__(self, μ, σ2):
         """
         This is the continuous probability distribution of the random variable X
-        that is assumed to be additively produced by many small effects
-        :param μ:
-        :param σ2:
+        that is assumed to be additively produced by many small effects \n
+        :param μ: Expectation of the distribution
+        :param σ2: Variance of the distribution
         """
         self.μ = μ
         self.σ2 = σ2
