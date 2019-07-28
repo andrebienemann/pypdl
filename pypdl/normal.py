@@ -29,4 +29,4 @@ class Normal:
         :param x: Value of the random variable X
         :return: Probability that X will take a value less than or equal to x
         """
-        return (1 + math.erf((x - self.μ) / (self.σ2 * math.sqrt(2)))) / 2
+        return (1 + math.erf((x - self.μ) / (math.sqrt(self.σ2 * 2)))) / 2
