@@ -1,10 +1,13 @@
 class Bernoulli:
+    """
+    This is the discrete probability distribution of
+    a random variable which takes either value 1 or 0
+    """
 
     def __init__(self, p):
         """
-        This is the discrete probability distribution of
-        a random variable which takes either value 1 or 0 \n
-        :param p: Probability of the positive outcome of the experiment
+        :param p: probability of the positive outcome of the experiment
+        :type p: float
         """
         self.p = p
         self.mean = p
@@ -12,9 +15,10 @@ class Bernoulli:
 
     def pmf(self, x):
         """
-        Probability mass function \n
-        :param x: Value of the random variable X
-        :return: Probability that X will take a value exactly equal to x
+        Probability Mass Function \n
+        :param x: value of the random variable X
+        :type x: int
+        :return: probability that X will take a value exactly equal to x
         """
         if x == 0:
             return 1 - self.p
@@ -23,9 +27,10 @@ class Bernoulli:
 
     def cdf(self, x):
         """
-        Cumulative distribution function \n
-        :param x: Value of the random variable X
-        :return: Probability that X will take a value less than or equal to x
+        Cumulative Distribution Function \n
+        :param x: value of the random variable X
+        :type x: int
+        :return: probability that X will take a value less than or equal to x
         """
         if x == 0:
             return 1 - self.p

@@ -1,10 +1,13 @@
 class Geometric:
+    """
+    This is the discrete probability distributions of the random number X
+    of Bernoulli trials needed to get a single success
+    """
 
     def __init__(self, p):
         """
-        This is the discrete probability distributions of the random number X
-        of Bernoulli trials needed to get a single success \n
-        :param p: Probability of the positive outcome of the experiment
+        :param p: probability of the positive outcome of the experiment
+        :type p: float
         """
         self.p = p
         self.mean = 1 / p
@@ -12,17 +15,19 @@ class Geometric:
 
     def pmf(self, x):
         """
-        Probability mass function \n
-        :param x: Value of the random variable X
-        :return: Probability that X will take a value exactly equal to x
+        Probability Mass Function \n
+        :param x: value of the random variable X
+        :type x: int
+        :return: probability that X will take a value exactly equal to x
         """
         return (1 - self.p) ** x * self.p
 
     def cdf(self, x):
         """
-        Cumulative distribution function \n
-        :param x: Value of the random variable X
-        :return: Probability that X will take a value less than or equal to x
+        Cumulative Distribution Function \n
+        :param x: value of the random variable X
+        :type x: int
+        :return: probability that X will take a value less than or equal to x
         """
         if x == 0:
             return self.pmf(0)
