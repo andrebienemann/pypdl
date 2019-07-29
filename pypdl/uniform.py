@@ -1,14 +1,15 @@
 class Uniform:
     """
-    TODO
+    This is the continuous distribution of the random variable X in interval [a; b]
+    where any value of X has an equal probability
     """
 
     def __init__(self, a, b):
         """
-        :param a: TODO
-        :type a: TODO
-        :param b: TODO
-        :type b: TODO
+        :param a: minimum value of X
+        :type a: float
+        :param b: maximum value of X
+        :type b: float
         """
         self.a = a
         self.b = b
@@ -29,5 +30,9 @@ class Uniform:
         :param x: value of the random variable X
         :return: probability that X will take a value less than or equal to x
         """
-        # TODO
-        pass
+        if x <= self.a:
+            return 0.0
+        elif x >= self.b:
+            return 1.0
+        else:
+            return (x - self.a) / (self.b - self.a)
