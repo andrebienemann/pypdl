@@ -21,7 +21,7 @@ class Bernoulli:
         :return: probability that X will take a value exactly equal to x
         """
         if x == 0:
-            return 1 - self.p
+            return 1.0 - self.p
         else:
             return self.p
 
@@ -33,6 +33,6 @@ class Bernoulli:
         :return: probability that X will take a value less than or equal to x
         """
         if x == 0:
-            return 1 - self.p
+            return 1.0 - self.p
         else:
-            return 1
+            return 1.0
